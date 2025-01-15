@@ -1,0 +1,19 @@
+//Configuration for typescript => javascript
+{ 
+    "compilerOptions": {
+        "target": "ES2020", // ESMAjs (nodeJS => ESMAjs and CommonJS)
+        "module": "commonjs",
+        "outDir": "./dist", // natijani dist folderga yoz
+        "strict": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "baseUrl": "./",
+        "paths": {
+            "*": ["node_modules/*"]
+        }
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"]
+}
