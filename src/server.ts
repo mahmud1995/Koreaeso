@@ -1,10 +1,6 @@
-const ali: string = "hello";
+// Architectural Pattern & Design Pattern
+import dotenv from 'dotenv';
+dotenv.config();
 
-// axios = data fetch
-// react rooter = urganish
-// reactQuery - without GraphQL ishlatsa buladi
-// useEffect = useQuery
-
-const person: string = "Jony";
-const count: number = 100;
-console.log(ali, person, count);
+console.log("PORT:", process.env.PORT);
+console.log("MONGO_URL:", process.env.MONGO_URL);
